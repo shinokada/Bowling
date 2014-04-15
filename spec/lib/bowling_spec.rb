@@ -46,4 +46,8 @@ describe Game do
    it "should score 32 for rolls of 1,3,10,6,4,6,2" do
     game.score([1,3,10,6,4,6,2]).should be == 48     
   end
+   
+   it "should score 124 for rolls of 6, 2, 0, 3, 5, 5, 0, 8, 10, 1, 9, 3, 6, 6, 4, 10, 5, 5, 3" do
+    game.score([6, 2, 0, 3, 5, 5, 0, 8, 10, 1, 9, 3, 6, 6, 4, 10, 5, 5, 3 ]).should be == 124
+  end
 end
